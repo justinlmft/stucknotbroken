@@ -1,0 +1,53 @@
+{
+  "_meta": {
+    "updated": "2026-06-13",
+    "updated_by": "initial commit (Cowork)",
+    "purpose": "Single source for repeated values (prices + next live-event dates) on Stuck Not Broken Circle pages. Pages keep the real value baked into the HTML as a static fallback and only overwrite it from this file if the live fetch succeeds, so nothing ever shows blank and SEO/body copy is unaffected.",
+    "raw_url": "https://raw.githubusercontent.com/justinlmft/stucknotbroken/main/site-data.json",
+    "events_note": "raw_utc = UTC ISO-8601 (source of truth); display = America/Los_Angeles. Refreshed weekly from Circle Events (community stucknotbroken, 'Calendar' space id 2429616).",
+    "cohort_rule": "Once a cohort has started it is locked: show_publicly=false and its dates are not surfaced on public pages until the next cohort opens."
+  },
+  "events": {
+    "capacity_builder": {
+      "name": "Capacity Builder: Self-Regulation Practice",
+      "next_utc": "2026-06-15T16:00:00.000Z",
+      "next_display": "Monday, June 15 at 9:00 AM PT"
+    },
+    "mindful_moment": {
+      "name": "Mindful Moment",
+      "next_utc": "2026-06-17T16:00:00.000Z",
+      "next_display": "Wednesday, June 17 at 9:00 AM PT"
+    },
+    "qa": {
+      "name": "Q&A",
+      "next_utc": "2026-07-13T16:30:00.000Z",
+      "next_display": "Monday, July 13 at 9:30 AM PT"
+    },
+    "cohort": {
+      "name": "Self-Regulation Simplified: Cohort 5",
+      "status": "in_progress",
+      "show_publicly": false,
+      "next_session_utc": "2026-06-15T22:00:00.000Z",
+      "note": "Cohort 5 started 2026-06-01; dates hidden publicly per cohort_rule until the next cohort opens."
+    }
+  },
+  "prices": {
+    "academy": {
+      "self_reg": {
+        "6mo":  { "amt": "$150", "mo": "$25/mo" },
+        "12mo": { "amt": "$250", "mo": "~$21/mo" }
+      },
+      "co_reg": {
+        "3mo":  { "amt": "$150", "mo": "$50/mo" },
+        "6mo":  { "amt": "$275", "mo": "~$46/mo" },
+        "12mo": { "amt": "$425", "mo": "~$35/mo" }
+      },
+      "lifetime": { "amt": "$1,800", "mo": "no renewals" },
+      "single_cohort_range": "$250-400"
+    },
+    "books": {
+      "single": { "pdf": "$10", "kindle": "$10", "softcover": "$20" },
+      "set":    { "pdf": "$30", "kindle": "$30", "softcover": "$60" }
+    }
+  }
+}
