@@ -29,17 +29,24 @@
       "show_publicly": false,
       "next_session_utc": "2026-06-15T22:00:00.000Z",
       "note": "Cohort 5 started 2026-06-01; dates hidden publicly per cohort_rule until the next cohort opens."
+    },
+    "next_any": {
+      "label": "Capacity Builder",
+      "series": "capacity_builder",
+      "next_utc": "2026-06-15T16:00:00.000Z",
+      "next_display": "Monday, June 15 at 9:00 AM PT",
+      "display_full": "Capacity Builder: Monday, June 15 at 9:00 AM PT"
     }
   },
   "prices": {
     "academy": {
       "self_reg": {
-        "6mo":  { "amt": "$150", "mo": "$25/mo" },
+        "6mo": { "amt": "$150", "mo": "$25/mo" },
         "12mo": { "amt": "$250", "mo": "~$21/mo" }
       },
       "co_reg": {
-        "3mo":  { "amt": "$150", "mo": "$50/mo" },
-        "6mo":  { "amt": "$275", "mo": "~$46/mo" },
+        "3mo": { "amt": "$150", "mo": "$50/mo" },
+        "6mo": { "amt": "$275", "mo": "~$46/mo" },
         "12mo": { "amt": "$425", "mo": "~$35/mo" }
       },
       "lifetime": { "amt": "$1,800", "mo": "no renewals" },
@@ -47,7 +54,7 @@
     },
     "books": {
       "single": { "pdf": "$10", "kindle": "$10", "softcover": "$20" },
-      "set":    { "pdf": "$30", "kindle": "$30", "softcover": "$60" }
+      "set": { "pdf": "$30", "kindle": "$30", "softcover": "$60" }
     }
   }
 }
