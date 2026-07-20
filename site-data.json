@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "updated": "2026-07-13",
+    "updated": "2026-07-19",
     "updated_by": "Cowork weekly refresh",
     "purpose": "Single source for repeated values (prices + next live-event dates) on Stuck Not Broken Circle pages. Pages keep the real value baked into the HTML as a static fallback and only overwrite it from this file if the live fetch succeeds, so nothing ever shows blank and SEO/body copy is unaffected.",
     "raw_url": "https://raw.githubusercontent.com/justinlmft/stucknotbroken/main/site-data.json",
@@ -10,13 +10,13 @@
   "events": {
     "capacity_builder": {
       "name": "Capacity Builder: Self-Regulation Practice",
-      "next_utc": "2026-07-14T16:00:00.000Z",
-      "next_display": "Tuesday, July 14 at 9:00 AM PT"
+      "next_utc": "2026-07-24T21:30:00.000Z",
+      "next_display": "Friday, July 24 at 2:30 PM PT"
     },
     "mindful_moment": {
       "name": "Mindful Moment",
-      "next_utc": "2026-07-15T16:00:00.000Z",
-      "next_display": "Wednesday, July 15 at 9:00 AM PT"
+      "next_utc": "2026-07-22T16:00:00.000Z",
+      "next_display": "Wednesday, July 22 at 9:00 AM PT"
     },
     "qa": {
       "name": "Q&A",
@@ -27,34 +27,60 @@
       "name": "Self-Regulation Simplified: Cohort 5",
       "status": "in_progress",
       "show_publicly": false,
-      "next_session_utc": "2026-07-13T22:00:00.000Z",
+      "next_session_utc": "2026-07-20T22:00:00.000Z",
       "note": "Cohort 5 in progress; dates hidden publicly per cohort_rule until the next cohort opens."
     },
     "next_any": {
-      "label": "Capacity Builder: Self-Regulation Practice",
-      "series": "capacity_builder",
-      "next_utc": "2026-07-14T16:00:00.000Z",
-      "next_display": "Tuesday, July 14 at 9:00 AM PT",
-      "display_full": "Capacity Builder: Self-Regulation Practice: Tuesday, July 14 at 9:00 AM PT"
+      "label": "Mindful Moment",
+      "series": "mindful_moment",
+      "next_utc": "2026-07-22T16:00:00.000Z",
+      "next_display": "Wednesday, July 22 at 9:00 AM PT",
+      "display_full": "Mindful Moment: Wednesday, July 22 at 9:00 AM PT"
     }
   },
   "prices": {
     "academy": {
       "self_reg": {
-        "6mo": { "amt": "$150", "mo": "$25/mo" },
-        "12mo": { "amt": "$250", "mo": "~$21/mo" }
+        "6mo": {
+          "amt": "$150",
+          "mo": "$25/mo"
+        },
+        "12mo": {
+          "amt": "$250",
+          "mo": "~$21/mo"
+        }
       },
       "co_reg": {
-        "3mo": { "amt": "$150", "mo": "$50/mo" },
-        "6mo": { "amt": "$275", "mo": "~$46/mo" },
-        "12mo": { "amt": "$425", "mo": "~$35/mo" }
+        "3mo": {
+          "amt": "$150",
+          "mo": "$50/mo"
+        },
+        "6mo": {
+          "amt": "$275",
+          "mo": "~$46/mo"
+        },
+        "12mo": {
+          "amt": "$425",
+          "mo": "~$35/mo"
+        }
       },
-      "lifetime": { "amt": "$1,800", "mo": "no renewals" },
+      "lifetime": {
+        "amt": "$1,800",
+        "mo": "no renewals"
+      },
       "single_cohort_range": "$250-400"
     },
     "books": {
-      "single": { "pdf": "$10", "kindle": "$10", "softcover": "$20" },
-      "set": { "pdf": "$30", "kindle": "$30", "softcover": "$60" }
+      "single": {
+        "pdf": "$10",
+        "kindle": "$10",
+        "softcover": "$20"
+      },
+      "set": {
+        "pdf": "$30",
+        "kindle": "$30",
+        "softcover": "$60"
+      }
     }
   }
 }
