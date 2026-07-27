@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "updated": "2026-07-23",
+    "updated": "2026-07-27",
     "updated_by": "Cowork weekly refresh",
     "purpose": "Single source for repeated values (prices + next live-event dates) on Stuck Not Broken Circle pages. Pages keep the real value baked into the HTML as a static fallback and only overwrite it from this file if the live fetch succeeds, so nothing ever shows blank and SEO/body copy is unaffected.",
     "raw_url": "https://raw.githubusercontent.com/justinlmft/stucknotbroken/main/site-data.json",
@@ -10,8 +10,8 @@
   "events": {
     "capacity_builder": {
       "name": "Capacity Builder: Self-Regulation Practice",
-      "next_utc": "2026-07-24T21:30:00.000Z",
-      "next_display": "Friday, July 24 at 2:30 PM PT"
+      "next_utc": "2026-07-27T16:00:00.000Z",
+      "next_display": "Monday, July 27 at 9:00 AM PT"
     },
     "mindful_moment": {
       "name": "Mindful Moment",
@@ -33,9 +33,9 @@
     "next_any": {
       "label": "Capacity Builder",
       "series": "capacity_builder",
-      "next_utc": "2026-07-24T21:30:00.000Z",
-      "next_display": "Friday, July 24 at 2:30 PM PT",
-      "display_full": "Capacity Builder: Friday, July 24 at 2:30 PM PT"
+      "next_utc": "2026-07-27T16:00:00.000Z",
+      "next_display": "Monday, July 27 at 9:00 AM PT",
+      "display_full": "Capacity Builder: Monday, July 27 at 9:00 AM PT"
     }
   },
   "prices": {
