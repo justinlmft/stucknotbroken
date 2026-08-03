@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "updated": "2026-07-27",
+    "updated": "2026-08-03",
     "updated_by": "Cowork weekly refresh",
     "purpose": "Single source for repeated values (prices + next live-event dates) on Stuck Not Broken Circle pages. Pages keep the real value baked into the HTML as a static fallback and only overwrite it from this file if the live fetch succeeds, so nothing ever shows blank and SEO/body copy is unaffected.",
     "raw_url": "https://raw.githubusercontent.com/justinlmft/stucknotbroken/main/site-data.json",
@@ -10,13 +10,13 @@
   "events": {
     "capacity_builder": {
       "name": "Capacity Builder: Self-Regulation Practice",
-      "next_utc": "2026-07-27T16:00:00.000Z",
-      "next_display": "Monday, July 27 at 9:00 AM PT"
+      "next_utc": "2026-08-07T21:30:00.000Z",
+      "next_display": "Friday, August 7 at 2:30 PM PT"
     },
     "mindful_moment": {
       "name": "Mindful Moment",
-      "next_utc": "2026-07-29T16:00:00.000Z",
-      "next_display": "Wednesday, July 29 at 9:00 AM PT"
+      "next_utc": "2026-08-05T16:00:00.000Z",
+      "next_display": "Wednesday, August 5 at 9:00 AM PT"
     },
     "qa": {
       "name": "Q&A",
@@ -31,11 +31,11 @@
       "note": "Cohort 5 wrapped 2026-07-20; next cohort not yet scheduled. Dates hidden publicly per cohort_rule until the next cohort opens."
     },
     "next_any": {
-      "label": "Capacity Builder",
-      "series": "capacity_builder",
-      "next_utc": "2026-07-27T16:00:00.000Z",
-      "next_display": "Monday, July 27 at 9:00 AM PT",
-      "display_full": "Capacity Builder: Monday, July 27 at 9:00 AM PT"
+      "label": "Mindful Moment",
+      "series": "mindful_moment",
+      "next_utc": "2026-08-05T16:00:00.000Z",
+      "next_display": "Wednesday, August 5 at 9:00 AM PT",
+      "display_full": "Mindful Moment: Wednesday, August 5 at 9:00 AM PT"
     }
   },
   "prices": {
