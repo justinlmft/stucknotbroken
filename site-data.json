@@ -1,6 +1,7 @@
+
 {
   "_meta": {
-    "updated": "2026-08-03",
+    "updated": "2026-08-10",
     "updated_by": "Cowork weekly refresh",
     "purpose": "Single source for repeated values (prices + next live-event dates) on Stuck Not Broken Circle pages. Pages keep the real value baked into the HTML as a static fallback and only overwrite it from this file if the live fetch succeeds, so nothing ever shows blank and SEO/body copy is unaffected.",
     "raw_url": "https://raw.githubusercontent.com/justinlmft/stucknotbroken/main/site-data.json",
@@ -10,13 +11,13 @@
   "events": {
     "capacity_builder": {
       "name": "Capacity Builder: Self-Regulation Practice",
-      "next_utc": "2026-08-07T21:30:00.000Z",
-      "next_display": "Friday, August 7 at 2:30 PM PT"
+      "next_utc": "2026-08-10T16:00:00.000Z",
+      "next_display": "Monday, August 10 at 9:00 AM PT"
     },
     "mindful_moment": {
       "name": "Mindful Moment",
-      "next_utc": "2026-08-05T16:00:00.000Z",
-      "next_display": "Wednesday, August 5 at 9:00 AM PT"
+      "next_utc": "2026-08-12T16:00:00.000Z",
+      "next_display": "Wednesday, August 12 at 9:00 AM PT"
     },
     "qa": {
       "name": "Q&A",
@@ -25,17 +26,17 @@
     },
     "cohort": {
       "name": "Self-Regulation Simplified: Cohort 5",
-      "status": "completed",
+      "status": "scheduled",
       "show_publicly": false,
-      "next_session_utc": "2026-07-20T22:00:00.000Z",
-      "note": "Cohort 5 wrapped 2026-07-20; next cohort not yet scheduled. Dates hidden publicly per cohort_rule until the next cohort opens."
+      "next_session_utc": "2026-09-03T16:00:00.000Z",
+      "note": "Next cohort (6) opens 2026-09-03; dates hidden publicly per cohort_rule until it starts."
     },
     "next_any": {
-      "label": "Mindful Moment",
-      "series": "mindful_moment",
-      "next_utc": "2026-08-05T16:00:00.000Z",
-      "next_display": "Wednesday, August 5 at 9:00 AM PT",
-      "display_full": "Mindful Moment: Wednesday, August 5 at 9:00 AM PT"
+      "label": "Capacity Builder",
+      "series": "capacity_builder",
+      "next_utc": "2026-08-10T16:00:00.000Z",
+      "next_display": "Monday, August 10 at 9:00 AM PT",
+      "display_full": "Capacity Builder: Monday, August 10 at 9:00 AM PT"
     }
   },
   "prices": {
