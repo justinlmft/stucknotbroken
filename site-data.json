@@ -1,7 +1,7 @@
 
 {
   "_meta": {
-    "updated": "2026-08-10",
+    "updated": "2026-08-17",
     "updated_by": "Cowork weekly refresh",
     "purpose": "Single source for repeated values (prices + next live-event dates) on Stuck Not Broken Circle pages. Pages keep the real value baked into the HTML as a static fallback and only overwrite it from this file if the live fetch succeeds, so nothing ever shows blank and SEO/body copy is unaffected.",
     "raw_url": "https://raw.githubusercontent.com/justinlmft/stucknotbroken/main/site-data.json",
@@ -11,18 +11,18 @@
   "events": {
     "capacity_builder": {
       "name": "Capacity Builder: Self-Regulation Practice",
-      "next_utc": "2026-08-10T16:00:00.000Z",
-      "next_display": "Monday, August 10 at 9:00 AM PT"
+      "next_utc": "2026-08-21T21:30:00.000Z",
+      "next_display": "Friday, August 21 at 2:30 PM PT"
     },
     "mindful_moment": {
       "name": "Mindful Moment",
-      "next_utc": "2026-08-12T16:00:00.000Z",
-      "next_display": "Wednesday, August 12 at 9:00 AM PT"
+      "next_utc": "2026-08-19T16:00:00.000Z",
+      "next_display": "Wednesday, August 19 at 9:00 AM PT"
     },
     "qa": {
       "name": "Q&A",
-      "next_utc": "2026-08-10T17:30:00.000Z",
-      "next_display": "Monday, August 10 at 10:30 AM PT"
+      "next_utc": "2026-09-14T17:30:00.000Z",
+      "next_display": "Monday, September 14 at 10:30 AM PT"
     },
     "cohort": {
       "name": "Self-Regulation Simplified: Cohort 5",
@@ -32,11 +32,11 @@
       "note": "Next cohort (6) opens 2026-09-03; dates hidden publicly per cohort_rule until it starts."
     },
     "next_any": {
-      "label": "Capacity Builder",
-      "series": "capacity_builder",
-      "next_utc": "2026-08-10T16:00:00.000Z",
-      "next_display": "Monday, August 10 at 9:00 AM PT",
-      "display_full": "Capacity Builder: Monday, August 10 at 9:00 AM PT"
+      "label": "Mindful Moment",
+      "series": "mindful_moment",
+      "next_utc": "2026-08-19T16:00:00.000Z",
+      "next_display": "Wednesday, August 19 at 9:00 AM PT",
+      "display_full": "Mindful Moment: Wednesday, August 19 at 9:00 AM PT"
     }
   },
   "prices": {
