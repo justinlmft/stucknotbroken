@@ -1,87 +1,220 @@
-
 {
   "_meta": {
-    "updated": "2026-08-24",
-    "updated_by": "Cowork weekly refresh",
     "purpose": "Single source for repeated values (prices + next live-event dates) on Stuck Not Broken Circle pages. Pages keep the real value baked into the HTML as a static fallback and only overwrite it from this file if the live fetch succeeds, so nothing ever shows blank and SEO/body copy is unaffected.",
     "raw_url": "https://raw.githubusercontent.com/justinlmft/stucknotbroken/main/site-data.json",
-    "events_note": "raw_utc = UTC ISO-8601 (source of truth); display = America/Los_Angeles. Refreshed DAILY from Circle Events (community stucknotbroken, 'Calendar' space id 2429616). next_* = soonest event whose start is in the future at refresh time.",
-    "cohort_rule": "Once a cohort has started it is locked: show_publicly=false and its dates are not surfaced on public pages until the next cohort opens."
-  },
-  "events": {
-    "capacity_builder": {
-      "name": "Capacity Builder: Self-Regulation Practice",
-      "next_utc": "2026-08-24T16:00:00.000Z",
-      "next_display": "Monday, August 24 at 9:00 AM PT"
-    },
-    "mindful_moment": {
-      "name": "Mindful Moment",
-      "next_utc": "2026-08-26T16:00:00.000Z",
-      "next_display": "Wednesday, August 26 at 9:00 AM PT"
-    },
-    "qa": {
-      "name": "Q&A",
-      "next_utc": "2026-09-14T17:30:00.000Z",
-      "next_display": "Monday, September 14 at 10:30 AM PT"
-    },
-    "cohort": {
-      "name": "Self-Regulation Simplified: Cohort 5",
-      "status": "scheduled",
-      "show_publicly": false,
-      "next_session_utc": "2026-09-03T16:00:00.000Z",
-      "note": "Next cohort (6) opens 2026-09-03; dates hidden publicly per cohort_rule until it starts."
-    },
-    "next_any": {
-      "label": "Capacity Builder",
-      "series": "capacity_builder",
-      "next_utc": "2026-08-24T16:00:00.000Z",
-      "next_display": "Monday, August 24 at 9:00 AM PT",
-      "display_full": "Capacity Builder: Monday, August 24 at 9:00 AM PT"
-    }
+    "updated": "2026-08-27",
+    "updated_by": "Web Designer (Cowork) - Academy pricing switch + self-updating event lists",
+    "cohort_rule": "Once a cohort has started it is locked: show_publicly=false and its dates are not surfaced on public pages until the next cohort opens.",
+    "events_note": "utc = UTC ISO-8601 (source of truth); display = America/Los_Angeles. Sourced from Circle Events (community stucknotbroken, 'Calendar' space id 2429616). events.<series>.upcoming is a FORWARD-LOOKING LIST: the page picks the first entry still in the future AT PAGE LOAD, so the displayed date stays correct between refreshes and a late or failed refresh cannot strand a date that has already passed. next_utc/next_display are the head of that list, kept for older embeds that read them directly. Refresh before the list runs out (see prices_note for the cadence).",
+    "prices_note": "Academy moved to monthly billing 2026-08-27: Self-Regulator $24/mo, Co-Regulator $39/mo, cancel anytime. The old term keys (3mo/6mo/12mo) are gone - existing members keep legacy rates, but nothing new is sold on them. Lifetime is still sold but is deliberately NOT advertised. Prices are hand-managed; the scheduled refresh must never rewrite this block."
   },
   "prices": {
-    "academy": {
-      "self_reg": {
-        "6mo": {
-          "amt": "$150",
-          "mo": "$25/mo"
-        },
-        "12mo": {
-          "amt": "$250",
-          "mo": "~$21/mo"
-        }
-      },
-      "co_reg": {
-        "3mo": {
-          "amt": "$150",
-          "mo": "$50/mo"
-        },
-        "6mo": {
-          "amt": "$275",
-          "mo": "~$46/mo"
-        },
-        "12mo": {
-          "amt": "$425",
-          "mo": "~$35/mo"
-        }
-      },
-      "lifetime": {
-        "amt": "$1,800",
-        "mo": "no renewals"
-      },
-      "single_cohort_range": "$250-400"
-    },
     "books": {
-      "single": {
-        "pdf": "$10",
-        "kindle": "$10",
-        "softcover": "$20"
-      },
       "set": {
         "pdf": "$30",
         "kindle": "$30",
         "softcover": "$60"
+      },
+      "single": {
+        "pdf": "$10",
+        "kindle": "$10",
+        "softcover": "$20"
       }
+    },
+    "academy": {
+      "self_reg": {
+        "monthly": {
+          "mo": "$24/mo",
+          "amt": "$24"
+        }
+      },
+      "co_reg": {
+        "monthly": {
+          "mo": "$39/mo",
+          "amt": "$39"
+        }
+      },
+      "lifetime": {
+        "mo": "no renewals",
+        "amt": "$1,800",
+        "public": false,
+        "note": "Still sold, no longer advertised on the site (Justin, 2026-08-27). Do not surface."
+      },
+      "single_cohort_range": "$250-400"
+    }
+  },
+  "events": {
+    "capacity_builder": {
+      "name": "Capacity Builder: Self-Regulation Practice",
+      "next_utc": "2026-09-04T21:30:00.000Z",
+      "next_display": "Friday, September 4 at 2:30 PM PT",
+      "upcoming": [
+        {
+          "utc": "2026-09-04T21:30:00.000Z",
+          "display": "Friday, September 4 at 2:30 PM PT"
+        },
+        {
+          "utc": "2026-09-07T16:00:00.000Z",
+          "display": "Monday, September 7 at 9:00 AM PT"
+        },
+        {
+          "utc": "2026-09-18T21:30:00.000Z",
+          "display": "Friday, September 18 at 2:30 PM PT"
+        },
+        {
+          "utc": "2026-09-21T16:00:00.000Z",
+          "display": "Monday, September 21 at 9:00 AM PT"
+        },
+        {
+          "utc": "2026-10-05T16:00:00.000Z",
+          "display": "Monday, October 5 at 9:00 AM PT"
+        }
+      ]
+    },
+    "mindful_moment": {
+      "name": "Mindful Moment",
+      "next_utc": "2026-09-02T16:00:00.000Z",
+      "next_display": "Wednesday, September 2 at 9:00 AM PT",
+      "upcoming": [
+        {
+          "utc": "2026-09-02T16:00:00.000Z",
+          "display": "Wednesday, September 2 at 9:00 AM PT"
+        },
+        {
+          "utc": "2026-09-09T16:00:00.000Z",
+          "display": "Wednesday, September 9 at 9:00 AM PT"
+        },
+        {
+          "utc": "2026-09-16T16:00:00.000Z",
+          "display": "Wednesday, September 16 at 9:00 AM PT"
+        },
+        {
+          "utc": "2026-09-23T16:00:00.000Z",
+          "display": "Wednesday, September 23 at 9:00 AM PT"
+        },
+        {
+          "utc": "2026-09-30T16:00:00.000Z",
+          "display": "Wednesday, September 30 at 9:00 AM PT"
+        },
+        {
+          "utc": "2026-10-07T16:00:00.000Z",
+          "display": "Wednesday, October 7 at 9:00 AM PT"
+        },
+        {
+          "utc": "2026-10-14T16:00:00.000Z",
+          "display": "Wednesday, October 14 at 9:00 AM PT"
+        }
+      ]
+    },
+    "qa": {
+      "name": "Q&A",
+      "next_utc": "2026-09-14T17:30:00.000Z",
+      "next_display": "Monday, September 14 at 10:30 AM PT",
+      "upcoming": [
+        {
+          "utc": "2026-09-14T17:30:00.000Z",
+          "display": "Monday, September 14 at 10:30 AM PT"
+        },
+        {
+          "utc": "2026-10-12T17:30:00.000Z",
+          "display": "Monday, October 12 at 10:30 AM PT"
+        },
+        {
+          "utc": "2026-11-09T18:30:00.000Z",
+          "display": "Monday, November 9 at 10:30 AM PT"
+        }
+      ]
+    },
+    "next_any": {
+      "label": "Mindful Moment",
+      "series": "mindful_moment",
+      "next_utc": "2026-09-02T16:00:00.000Z",
+      "next_display": "Wednesday, September 2 at 9:00 AM PT",
+      "display_full": "Mindful Moment: Wednesday, September 2 at 9:00 AM PT",
+      "upcoming": [
+        {
+          "utc": "2026-09-02T16:00:00.000Z",
+          "display": "Wednesday, September 2 at 9:00 AM PT",
+          "label": "Mindful Moment"
+        },
+        {
+          "utc": "2026-09-04T21:30:00.000Z",
+          "display": "Friday, September 4 at 2:30 PM PT",
+          "label": "Capacity Builder"
+        },
+        {
+          "utc": "2026-09-07T16:00:00.000Z",
+          "display": "Monday, September 7 at 9:00 AM PT",
+          "label": "Capacity Builder"
+        },
+        {
+          "utc": "2026-09-09T16:00:00.000Z",
+          "display": "Wednesday, September 9 at 9:00 AM PT",
+          "label": "Mindful Moment"
+        },
+        {
+          "utc": "2026-09-14T17:30:00.000Z",
+          "display": "Monday, September 14 at 10:30 AM PT",
+          "label": "Q&A"
+        },
+        {
+          "utc": "2026-09-16T16:00:00.000Z",
+          "display": "Wednesday, September 16 at 9:00 AM PT",
+          "label": "Mindful Moment"
+        },
+        {
+          "utc": "2026-09-18T21:30:00.000Z",
+          "display": "Friday, September 18 at 2:30 PM PT",
+          "label": "Capacity Builder"
+        },
+        {
+          "utc": "2026-09-21T16:00:00.000Z",
+          "display": "Monday, September 21 at 9:00 AM PT",
+          "label": "Capacity Builder"
+        },
+        {
+          "utc": "2026-09-23T16:00:00.000Z",
+          "display": "Wednesday, September 23 at 9:00 AM PT",
+          "label": "Mindful Moment"
+        },
+        {
+          "utc": "2026-09-30T16:00:00.000Z",
+          "display": "Wednesday, September 30 at 9:00 AM PT",
+          "label": "Mindful Moment"
+        },
+        {
+          "utc": "2026-10-05T16:00:00.000Z",
+          "display": "Monday, October 5 at 9:00 AM PT",
+          "label": "Capacity Builder"
+        },
+        {
+          "utc": "2026-10-07T16:00:00.000Z",
+          "display": "Wednesday, October 7 at 9:00 AM PT",
+          "label": "Mindful Moment"
+        },
+        {
+          "utc": "2026-10-12T17:30:00.000Z",
+          "display": "Monday, October 12 at 10:30 AM PT",
+          "label": "Q&A"
+        },
+        {
+          "utc": "2026-10-14T16:00:00.000Z",
+          "display": "Wednesday, October 14 at 9:00 AM PT",
+          "label": "Mindful Moment"
+        },
+        {
+          "utc": "2026-11-09T18:30:00.000Z",
+          "display": "Monday, November 9 at 10:30 AM PT",
+          "label": "Q&A"
+        }
+      ]
+    },
+    "cohort": {
+      "name": "Self-Regulation Simplified: Cohort 6",
+      "status": "scheduled",
+      "show_publicly": false,
+      "next_session_utc": "2026-09-03T16:00:00.000Z",
+      "note": "Cohort 6 sessions run 2026-09-03 through 2026-10-22; dates stay hidden publicly per cohort_rule until Justin says otherwise."
     }
   }
 }
