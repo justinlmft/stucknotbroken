@@ -2,8 +2,8 @@
   "_meta": {
     "purpose": "Single source for repeated values (prices + next live-event dates) on Stuck Not Broken Circle pages. Pages keep the real value baked into the HTML as a static fallback and only overwrite it from this file if the live fetch succeeds, so nothing ever shows blank and SEO/body copy is unaffected.",
     "raw_url": "https://raw.githubusercontent.com/justinlmft/stucknotbroken/main/site-data.json",
-    "updated": "2026-08-27",
-    "updated_by": "Web Designer (Cowork) - refreshed after the Friday Capacity Builder moved to 3:00 PM PT",
+    "updated": "2026-08-31",
+    "updated_by": "Scheduled task (Cowork) - refreshed upcoming event lists from Circle; added Dec 14 Q&A; cohort left untouched pending Justin's review",
     "cohort_rule": "Once a cohort has started it is locked: show_publicly=false and its dates are not surfaced on public pages until the next cohort opens.",
     "events_note": "utc = UTC ISO-8601 (source of truth); display = America/Los_Angeles. Sourced from Circle Events (community stucknotbroken, 'Calendar' space id 2429616). events.<series>.upcoming is a FORWARD-LOOKING LIST: the page picks the first entry still in the future AT PAGE LOAD, so the displayed date stays correct between refreshes and a late or failed refresh cannot strand a date that has already passed. next_utc/next_display are the head of that list, kept for older embeds that read them directly. Refresh before the list runs out (see prices_note for the cadence).",
     "prices_note": "Academy moved to monthly billing 2026-08-27: Self-Regulator $24/mo, Co-Regulator $39/mo, cancel anytime. The old term keys (3mo/6mo/12mo) are gone - existing members keep legacy rates, but nothing new is sold on them. Lifetime is still sold but is deliberately NOT advertised. Prices are hand-managed; the scheduled refresh must never rewrite this block."
@@ -122,6 +122,10 @@
         {
           "utc": "2026-11-09T18:30:00.000Z",
           "display": "Monday, November 9 at 10:30 AM PT"
+        },
+        {
+          "utc": "2026-12-14T18:30:00.000Z",
+          "display": "Monday, December 14 at 10:30 AM PT"
         }
       ]
     },
@@ -205,6 +209,11 @@
         {
           "utc": "2026-11-09T18:30:00.000Z",
           "display": "Monday, November 9 at 10:30 AM PT",
+          "label": "Q&A"
+        },
+        {
+          "utc": "2026-12-14T18:30:00.000Z",
+          "display": "Monday, December 14 at 10:30 AM PT",
           "label": "Q&A"
         }
       ]
