@@ -2,8 +2,8 @@
   "_meta": {
     "purpose": "Single source for repeated values (prices + next live-event dates) on Stuck Not Broken Circle pages. Pages keep the real value baked into the HTML as a static fallback and only overwrite it from this file if the live fetch succeeds, so nothing ever shows blank and SEO/body copy is unaffected.",
     "raw_url": "https://raw.githubusercontent.com/justinlmft/stucknotbroken/main/site-data.json",
-    "updated": "2026-08-31",
-    "updated_by": "Scheduled task (Cowork) - refreshed upcoming event lists from Circle; added Dec 14 Q&A; cohort left untouched pending Justin's review",
+    "updated": "2026-09-07",
+    "updated_by": "Scheduled task (Cowork) - refreshed upcoming event lists from Circle for all three free series and cohort 6; validated cohort 6 is running (Sept 3 session past) and left locked",
     "cohort_rule": "Once a cohort has started it is locked: show_publicly=false and its dates are not surfaced on public pages until the next cohort opens.",
     "events_note": "utc = UTC ISO-8601 (source of truth); display = America/Los_Angeles. Sourced from Circle Events (community stucknotbroken, 'Calendar' space id 2429616). events.<series>.upcoming is a FORWARD-LOOKING LIST: the page picks the first entry still in the future AT PAGE LOAD, so the displayed date stays correct between refreshes and a late or failed refresh cannot strand a date that has already passed. next_utc/next_display are the head of that list, kept for older embeds that read them directly. Refresh before the list runs out (see prices_note for the cadence).",
     "prices_note": "Academy moved to monthly billing 2026-08-27: Self-Regulator $24/mo, Co-Regulator $39/mo, cancel anytime. The old term keys (3mo/6mo/12mo) are gone - existing members keep legacy rates, but nothing new is sold on them. Lifetime is still sold but is deliberately NOT advertised. Prices are hand-managed; the scheduled refresh must never rewrite this block."
@@ -46,13 +46,9 @@
   "events": {
     "capacity_builder": {
       "name": "Capacity Builder: Self-Regulation Practice",
-      "next_utc": "2026-09-04T22:00:00.000Z",
-      "next_display": "Friday, September 4 at 3:00 PM PT",
+      "next_utc": "2026-09-07T16:00:00.000Z",
+      "next_display": "Monday, September 7 at 9:00 AM PT",
       "upcoming": [
-        {
-          "utc": "2026-09-04T22:00:00.000Z",
-          "display": "Friday, September 4 at 3:00 PM PT"
-        },
         {
           "utc": "2026-09-07T16:00:00.000Z",
           "display": "Monday, September 7 at 9:00 AM PT"
@@ -73,13 +69,9 @@
     },
     "mindful_moment": {
       "name": "Mindful Moment",
-      "next_utc": "2026-09-02T16:00:00.000Z",
-      "next_display": "Wednesday, September 2 at 9:00 AM PT",
+      "next_utc": "2026-09-09T16:00:00.000Z",
+      "next_display": "Wednesday, September 9 at 9:00 AM PT",
       "upcoming": [
-        {
-          "utc": "2026-09-02T16:00:00.000Z",
-          "display": "Wednesday, September 2 at 9:00 AM PT"
-        },
         {
           "utc": "2026-09-09T16:00:00.000Z",
           "display": "Wednesday, September 9 at 9:00 AM PT"
@@ -130,22 +122,12 @@
       ]
     },
     "next_any": {
-      "label": "Mindful Moment",
-      "series": "mindful_moment",
-      "next_utc": "2026-09-02T16:00:00.000Z",
-      "next_display": "Wednesday, September 2 at 9:00 AM PT",
-      "display_full": "Mindful Moment: Wednesday, September 2 at 9:00 AM PT",
+      "label": "Capacity Builder",
+      "series": "capacity_builder",
+      "next_utc": "2026-09-07T16:00:00.000Z",
+      "next_display": "Monday, September 7 at 9:00 AM PT",
+      "display_full": "Capacity Builder: Monday, September 7 at 9:00 AM PT",
       "upcoming": [
-        {
-          "utc": "2026-09-02T16:00:00.000Z",
-          "display": "Wednesday, September 2 at 9:00 AM PT",
-          "label": "Mindful Moment"
-        },
-        {
-          "utc": "2026-09-04T22:00:00.000Z",
-          "display": "Friday, September 4 at 3:00 PM PT",
-          "label": "Capacity Builder"
-        },
         {
           "utc": "2026-09-07T16:00:00.000Z",
           "display": "Monday, September 7 at 9:00 AM PT",
@@ -220,9 +202,9 @@
     },
     "cohort": {
       "name": "Self-Regulation Simplified: Cohort 6",
-      "status": "scheduled",
+      "status": "in_progress",
       "show_publicly": false,
-      "next_session_utc": "2026-09-03T16:00:00.000Z",
+      "next_session_utc": "2026-09-10T16:00:00.000Z",
       "note": "Cohort 6 sessions run 2026-09-03 through 2026-10-22; dates stay hidden publicly per cohort_rule until Justin says otherwise."
     }
   }
