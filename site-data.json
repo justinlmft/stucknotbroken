@@ -1,10 +1,9 @@
-
 {
   "_meta": {
     "purpose": "Single source for repeated values (prices + next live-event dates) on Stuck Not Broken Circle pages. Pages keep the real value baked into the HTML as a static fallback and only overwrite it from this file if the live fetch succeeds, so nothing ever shows blank and SEO/body copy is unaffected.",
     "raw_url": "https://raw.githubusercontent.com/justinlmft/stucknotbroken/main/site-data.json",
-    "updated": "2026-10-19",
-    "updated_by": "Scheduled task (Cowork) - refreshed upcoming event lists from Circle (queried 2026-10-19 through 2027-02-19). Capacity Builder: 19 future entries (was 18). Q&A: 4 future entries, unchanged dates. Mindful Moment: still no future events found in Circle - previous single (now-past) entry kept per guardrail, re-flagged for Justin. Cohort 6: still in_progress/locked, only one future session left (10/22, its last) - no cohort 7 yet, flagged that the public cohort card will go empty after 10/22.",
+    "updated": "2026-10-22",
+    "updated_by": "Scheduled task (Cowork) - refreshed upcoming event lists from Circle (queried 2026-10-22 through 2027-02-22). Capacity Builder: 20 future entries (was 19). Note: the 10/22 entry is a 'Capacity Builder ... (Monday)' series event that Circle actually scheduled for Thursday 10/22, not a Monday - real date taken as-is from Circle, flagging the mislabel for Justin. Mindful Moment: back to 17 future entries (previously flagged as having zero future events) - resumed weekly Wednesdays, 9:00 AM PT; prior flag resolved. Q&A: 4 future entries, unchanged dates. Cohort 6: Circle shows only 7 weekly sessions (9/03-10/15), all now in the past - last week's file incorrectly carried a 10/22 'final session' that does not exist in Circle. No cohort 7 found (checked through 2027-05-10). Public cohort card has nothing to show; flagged for Justin to post the next cohort.",
     "cohort_rule": "Once a cohort has started it is locked: show_publicly=false and its dates are not surfaced on public pages until the next cohort opens.",
     "events_note": "utc = UTC ISO-8601 (source of truth); display = America/Los_Angeles. Sourced from Circle Events (community stucknotbroken, 'Calendar' space id 2429616). events.<series>.upcoming is a FORWARD-LOOKING LIST: the page picks the first entry still in the future AT PAGE LOAD, so the displayed date stays correct between refreshes and a late or failed refresh cannot strand a date that has already passed. next_utc/next_display are the head of that list, kept for older embeds that read them directly. Refresh before the list runs out (see prices_note for the cadence).",
     "prices_note": "Academy moved to monthly billing 2026-08-27: Self-Regulator $24/mo, Co-Regulator $39/mo, cancel anytime. The old term keys (3mo/6mo/12mo) are gone - existing members keep legacy rates, but nothing new is sold on them. Lifetime is still sold but is deliberately NOT advertised. Prices are hand-managed; the scheduled refresh must never rewrite this block."
@@ -47,12 +46,12 @@
   "events": {
     "capacity_builder": {
       "name": "Capacity Builder: Self-Regulation Practice",
-      "next_utc": "2026-10-19T16:00:00.000Z",
-      "next_display": "Monday, October 19 at 9:00 AM PT",
+      "next_utc": "2026-10-22T16:00:00.000Z",
+      "next_display": "Thursday, October 22 at 9:00 AM PT",
       "upcoming": [
         {
-          "utc": "2026-10-19T16:00:00.000Z",
-          "display": "Monday, October 19 at 9:00 AM PT"
+          "utc": "2026-10-22T16:00:00.000Z",
+          "display": "Thursday, October 22 at 9:00 AM PT"
         },
         {
           "utc": "2026-10-23T22:00:00.000Z",
@@ -125,20 +124,87 @@
         {
           "utc": "2027-02-19T23:00:00.000Z",
           "display": "Friday, February 19 at 3:00 PM PT"
+        },
+        {
+          "utc": "2027-02-22T17:00:00.000Z",
+          "display": "Monday, February 22 at 9:00 AM PT"
         }
       ]
     },
     "mindful_moment": {
       "name": "Mindful Moment",
-      "next_utc": "2026-10-14T16:00:00.000Z",
-      "next_display": "Wednesday, October 14 at 9:00 AM PT",
+      "next_utc": "2026-10-28T16:00:00.000Z",
+      "next_display": "Wednesday, October 28 at 9:00 AM PT",
       "upcoming": [
         {
-          "utc": "2026-10-14T16:00:00.000Z",
-          "display": "Wednesday, October 14 at 9:00 AM PT"
+          "utc": "2026-10-28T16:00:00.000Z",
+          "display": "Wednesday, October 28 at 9:00 AM PT"
+        },
+        {
+          "utc": "2026-11-04T17:00:00.000Z",
+          "display": "Wednesday, November 4 at 9:00 AM PT"
+        },
+        {
+          "utc": "2026-11-11T17:00:00.000Z",
+          "display": "Wednesday, November 11 at 9:00 AM PT"
+        },
+        {
+          "utc": "2026-11-18T17:00:00.000Z",
+          "display": "Wednesday, November 18 at 9:00 AM PT"
+        },
+        {
+          "utc": "2026-11-25T17:00:00.000Z",
+          "display": "Wednesday, November 25 at 9:00 AM PT"
+        },
+        {
+          "utc": "2026-12-02T17:00:00.000Z",
+          "display": "Wednesday, December 2 at 9:00 AM PT"
+        },
+        {
+          "utc": "2026-12-09T17:00:00.000Z",
+          "display": "Wednesday, December 9 at 9:00 AM PT"
+        },
+        {
+          "utc": "2026-12-16T17:00:00.000Z",
+          "display": "Wednesday, December 16 at 9:00 AM PT"
+        },
+        {
+          "utc": "2026-12-23T17:00:00.000Z",
+          "display": "Wednesday, December 23 at 9:00 AM PT"
+        },
+        {
+          "utc": "2026-12-30T17:00:00.000Z",
+          "display": "Wednesday, December 30 at 9:00 AM PT"
+        },
+        {
+          "utc": "2027-01-06T17:00:00.000Z",
+          "display": "Wednesday, January 6 at 9:00 AM PT"
+        },
+        {
+          "utc": "2027-01-13T17:00:00.000Z",
+          "display": "Wednesday, January 13 at 9:00 AM PT"
+        },
+        {
+          "utc": "2027-01-20T17:00:00.000Z",
+          "display": "Wednesday, January 20 at 9:00 AM PT"
+        },
+        {
+          "utc": "2027-01-27T17:00:00.000Z",
+          "display": "Wednesday, January 27 at 9:00 AM PT"
+        },
+        {
+          "utc": "2027-02-03T17:00:00.000Z",
+          "display": "Wednesday, February 3 at 9:00 AM PT"
+        },
+        {
+          "utc": "2027-02-10T17:00:00.000Z",
+          "display": "Wednesday, February 10 at 9:00 AM PT"
+        },
+        {
+          "utc": "2027-02-17T17:00:00.000Z",
+          "display": "Wednesday, February 17 at 9:00 AM PT"
         }
-      ],
-      "_flag": "No future Mindful Moment events found in Circle (checked 2026-10-19 through 2027-02-19). This list's single entry (10/14) remains in the past. Left untouched per guardrail (never empty the list) rather than blanking it — needs a human look: is Mindful Moment paused, or does it need new sessions scheduled in Circle?"
+      ]
     },
     "qa": {
       "name": "Q&A",
@@ -166,19 +232,24 @@
     "next_any": {
       "label": "Capacity Builder",
       "series": "capacity_builder",
-      "next_utc": "2026-10-19T16:00:00.000Z",
-      "next_display": "Monday, October 19 at 9:00 AM PT",
-      "display_full": "Capacity Builder: Monday, October 19 at 9:00 AM PT",
+      "next_utc": "2026-10-22T16:00:00.000Z",
+      "next_display": "Thursday, October 22 at 9:00 AM PT",
+      "display_full": "Capacity Builder: Thursday, October 22 at 9:00 AM PT",
       "upcoming": [
         {
-          "utc": "2026-10-19T16:00:00.000Z",
-          "display": "Monday, October 19 at 9:00 AM PT",
+          "utc": "2026-10-22T16:00:00.000Z",
+          "display": "Thursday, October 22 at 9:00 AM PT",
           "label": "Capacity Builder"
         },
         {
           "utc": "2026-10-23T22:00:00.000Z",
           "display": "Friday, October 23 at 3:00 PM PT",
           "label": "Capacity Builder"
+        },
+        {
+          "utc": "2026-10-28T16:00:00.000Z",
+          "display": "Wednesday, October 28 at 9:00 AM PT",
+          "label": "Mindful Moment"
         },
         {
           "utc": "2026-10-30T22:00:00.000Z",
@@ -191,9 +262,19 @@
           "label": "Capacity Builder"
         },
         {
+          "utc": "2026-11-04T17:00:00.000Z",
+          "display": "Wednesday, November 4 at 9:00 AM PT",
+          "label": "Mindful Moment"
+        },
+        {
           "utc": "2026-11-09T18:30:00.000Z",
           "display": "Monday, November 9 at 10:30 AM PT",
           "label": "Q&A"
+        },
+        {
+          "utc": "2026-11-11T17:00:00.000Z",
+          "display": "Wednesday, November 11 at 9:00 AM PT",
+          "label": "Mindful Moment"
         },
         {
           "utc": "2026-11-13T23:00:00.000Z",
@@ -206,6 +287,16 @@
           "label": "Capacity Builder"
         },
         {
+          "utc": "2026-11-18T17:00:00.000Z",
+          "display": "Wednesday, November 18 at 9:00 AM PT",
+          "label": "Mindful Moment"
+        },
+        {
+          "utc": "2026-11-25T17:00:00.000Z",
+          "display": "Wednesday, November 25 at 9:00 AM PT",
+          "label": "Mindful Moment"
+        },
+        {
           "utc": "2026-11-27T23:00:00.000Z",
           "display": "Friday, November 27 at 3:00 PM PT",
           "label": "Capacity Builder"
@@ -214,6 +305,16 @@
           "utc": "2026-11-30T17:00:00.000Z",
           "display": "Monday, November 30 at 9:00 AM PT",
           "label": "Capacity Builder"
+        },
+        {
+          "utc": "2026-12-02T17:00:00.000Z",
+          "display": "Wednesday, December 2 at 9:00 AM PT",
+          "label": "Mindful Moment"
+        },
+        {
+          "utc": "2026-12-09T17:00:00.000Z",
+          "display": "Wednesday, December 9 at 9:00 AM PT",
+          "label": "Mindful Moment"
         },
         {
           "utc": "2026-12-11T23:00:00.000Z",
@@ -231,6 +332,16 @@
           "label": "Q&A"
         },
         {
+          "utc": "2026-12-16T17:00:00.000Z",
+          "display": "Wednesday, December 16 at 9:00 AM PT",
+          "label": "Mindful Moment"
+        },
+        {
+          "utc": "2026-12-23T17:00:00.000Z",
+          "display": "Wednesday, December 23 at 9:00 AM PT",
+          "label": "Mindful Moment"
+        },
+        {
           "utc": "2026-12-25T23:00:00.000Z",
           "display": "Friday, December 25 at 3:00 PM PT",
           "label": "Capacity Builder"
@@ -239,6 +350,16 @@
           "utc": "2026-12-28T17:00:00.000Z",
           "display": "Monday, December 28 at 9:00 AM PT",
           "label": "Capacity Builder"
+        },
+        {
+          "utc": "2026-12-30T17:00:00.000Z",
+          "display": "Wednesday, December 30 at 9:00 AM PT",
+          "label": "Mindful Moment"
+        },
+        {
+          "utc": "2027-01-06T17:00:00.000Z",
+          "display": "Wednesday, January 6 at 9:00 AM PT",
+          "label": "Mindful Moment"
         },
         {
           "utc": "2027-01-08T23:00:00.000Z",
@@ -256,6 +377,16 @@
           "label": "Q&A"
         },
         {
+          "utc": "2027-01-13T17:00:00.000Z",
+          "display": "Wednesday, January 13 at 9:00 AM PT",
+          "label": "Mindful Moment"
+        },
+        {
+          "utc": "2027-01-20T17:00:00.000Z",
+          "display": "Wednesday, January 20 at 9:00 AM PT",
+          "label": "Mindful Moment"
+        },
+        {
           "utc": "2027-01-22T23:00:00.000Z",
           "display": "Friday, January 22 at 3:00 PM PT",
           "label": "Capacity Builder"
@@ -264,6 +395,16 @@
           "utc": "2027-01-25T17:00:00.000Z",
           "display": "Monday, January 25 at 9:00 AM PT",
           "label": "Capacity Builder"
+        },
+        {
+          "utc": "2027-01-27T17:00:00.000Z",
+          "display": "Wednesday, January 27 at 9:00 AM PT",
+          "label": "Mindful Moment"
+        },
+        {
+          "utc": "2027-02-03T17:00:00.000Z",
+          "display": "Wednesday, February 3 at 9:00 AM PT",
+          "label": "Mindful Moment"
         },
         {
           "utc": "2027-02-05T23:00:00.000Z",
@@ -281,18 +422,33 @@
           "label": "Q&A"
         },
         {
+          "utc": "2027-02-10T17:00:00.000Z",
+          "display": "Wednesday, February 10 at 9:00 AM PT",
+          "label": "Mindful Moment"
+        },
+        {
+          "utc": "2027-02-17T17:00:00.000Z",
+          "display": "Wednesday, February 17 at 9:00 AM PT",
+          "label": "Mindful Moment"
+        },
+        {
           "utc": "2027-02-19T23:00:00.000Z",
           "display": "Friday, February 19 at 3:00 PM PT",
+          "label": "Capacity Builder"
+        },
+        {
+          "utc": "2027-02-22T17:00:00.000Z",
+          "display": "Monday, February 22 at 9:00 AM PT",
           "label": "Capacity Builder"
         }
       ]
     },
     "cohort": {
       "name": "Self-Regulation Simplified: Cohort 6",
-      "status": "in_progress",
+      "status": "completed",
       "show_publicly": false,
-      "next_session_utc": "2026-10-22T16:00:00.000Z",
-      "note": "Cohort 6 sessions run 2026-09-03 through 2026-10-22; this is its final session. Dates stay hidden publicly per cohort_rule until Justin says otherwise. No cohort 7 found yet in Circle through 2027-02-19 — flagged: once cohort 6 finishes 10/22, there is no running or upcoming cohort to show, so the public cohort card will have nothing to display until a new one is posted."
+      "next_session_utc": null,
+      "note": "Cohort 6 ran 7 weekly sessions in Circle: 2026-09-03 through 2026-10-15. As of this refresh (2026-10-22), all of those sessions are in the past and no cohort 7 has been posted in Circle (checked through 2027-05-10). Last week's file carried a 10/22 'final session' for cohort 6 that does not actually exist as an event in Circle - that was stale/incorrect and has been corrected here. Nothing to surface publicly until a new cohort is created in Circle; flagged for Justin."
     }
   }
 }
