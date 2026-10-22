@@ -3,7 +3,7 @@
     "purpose": "Single source for repeated values (prices + next live-event dates) on Stuck Not Broken Circle pages. Pages keep the real value baked into the HTML as a static fallback and only overwrite it from this file if the live fetch succeeds, so nothing ever shows blank and SEO/body copy is unaffected.",
     "raw_url": "https://raw.githubusercontent.com/justinlmft/stucknotbroken/main/site-data.json",
     "updated": "2026-10-22",
-    "updated_by": "Scheduled task (Cowork) - refreshed upcoming event lists from Circle (queried 2026-10-22 through 2027-02-22). Capacity Builder: 20 future entries (was 19). Note: the 10/22 entry is a 'Capacity Builder ... (Monday)' series event that Circle actually scheduled for Thursday 10/22, not a Monday - real date taken as-is from Circle, flagging the mislabel for Justin. Mindful Moment: back to 17 future entries (previously flagged as having zero future events) - resumed weekly Wednesdays, 9:00 AM PT; prior flag resolved. Q&A: 4 future entries, unchanged dates. Cohort 6: Circle shows only 7 weekly sessions (9/03-10/15), all now in the past - last week's file incorrectly carried a 10/22 'final session' that does not exist in Circle. No cohort 7 found (checked through 2027-05-10). Public cohort card has nothing to show; flagged for Justin to post the next cohort.",
+    "updated_by": "Scheduled task (Cowork), amended same day per Justin: the 10/22 Capacity Builder (Thursday) entry was a deliberate one-off substitution for a canceled Self-Regulation Simplified session, not a data error - no correction needed there. Cohort section updated to reflect that Justin is intentionally not scheduling cohorts for the time being; cohort stays hidden from public pages until he resumes.",
     "cohort_rule": "Once a cohort has started it is locked: show_publicly=false and its dates are not surfaced on public pages until the next cohort opens.",
     "events_note": "utc = UTC ISO-8601 (source of truth); display = America/Los_Angeles. Sourced from Circle Events (community stucknotbroken, 'Calendar' space id 2429616). events.<series>.upcoming is a FORWARD-LOOKING LIST: the page picks the first entry still in the future AT PAGE LOAD, so the displayed date stays correct between refreshes and a late or failed refresh cannot strand a date that has already passed. next_utc/next_display are the head of that list, kept for older embeds that read them directly. Refresh before the list runs out (see prices_note for the cadence).",
     "prices_note": "Academy moved to monthly billing 2026-08-27: Self-Regulator $24/mo, Co-Regulator $39/mo, cancel anytime. The old term keys (3mo/6mo/12mo) are gone - existing members keep legacy rates, but nothing new is sold on them. Lifetime is still sold but is deliberately NOT advertised. Prices are hand-managed; the scheduled refresh must never rewrite this block."
@@ -444,11 +444,11 @@
       ]
     },
     "cohort": {
-      "name": "Self-Regulation Simplified: Cohort 6",
-      "status": "completed",
+      "name": "Self-Regulation Simplified",
+      "status": "paused",
       "show_publicly": false,
       "next_session_utc": null,
-      "note": "Cohort 6 ran 7 weekly sessions in Circle: 2026-09-03 through 2026-10-15. As of this refresh (2026-10-22), all of those sessions are in the past and no cohort 7 has been posted in Circle (checked through 2027-05-10). Last week's file carried a 10/22 'final session' for cohort 6 that does not actually exist as an event in Circle - that was stale/incorrect and has been corrected here. Nothing to surface publicly until a new cohort is created in Circle; flagged for Justin."
+      "note": "Justin is intentionally not scheduling Self-Regulation Simplified cohorts for the time being (confirmed 2026-10-22). This is a deliberate pause, not a gap to flag - no action needed until he resumes and a new cohort appears in Circle. Cohort 6 (the last one run) completed its final live session 2026-10-15."
     }
   }
 }
