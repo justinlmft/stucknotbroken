@@ -2,8 +2,8 @@
   "_meta": {
     "purpose": "Single source for repeated values (prices + next live-event dates) on Stuck Not Broken Circle pages. Pages keep the real value baked into the HTML as a static fallback and only overwrite it from this file if the live fetch succeeds, so nothing ever shows blank and SEO/body copy is unaffected.",
     "raw_url": "https://raw.githubusercontent.com/justinlmft/stucknotbroken/main/site-data.json",
-    "updated": "2026-10-22",
-    "updated_by": "Scheduled task (Cowork), amended same day per Justin: the 10/22 Capacity Builder (Thursday) entry was a deliberate one-off substitution for a canceled Self-Regulation Simplified session, not a data error - no correction needed there. Cohort section updated to reflect that Justin is intentionally not scheduling cohorts for the time being; cohort stays hidden from public pages until he resumes.",
+    "updated": "2026-10-26",
+    "updated_by": "Scheduled task (Cowork), refreshed from Circle Events (space 2429616, filter_date 2026-10-26 to 2027-02-26). All three free series had future occurrences; cohort remains paused per Justin's 2026-10-22 note (no Self-Regulation Simplified events in range).",
     "cohort_rule": "Once a cohort has started it is locked: show_publicly=false and its dates are not surfaced on public pages until the next cohort opens.",
     "events_note": "utc = UTC ISO-8601 (source of truth); display = America/Los_Angeles. Sourced from Circle Events (community stucknotbroken, 'Calendar' space id 2429616). events.<series>.upcoming is a FORWARD-LOOKING LIST: the page picks the first entry still in the future AT PAGE LOAD, so the displayed date stays correct between refreshes and a late or failed refresh cannot strand a date that has already passed. next_utc/next_display are the head of that list, kept for older embeds that read them directly. Refresh before the list runs out (see prices_note for the cadence).",
     "prices_note": "Academy moved to monthly billing 2026-08-27: Self-Regulator $24/mo, Co-Regulator $39/mo, cancel anytime. The old term keys (3mo/6mo/12mo) are gone - existing members keep legacy rates, but nothing new is sold on them. Lifetime is still sold but is deliberately NOT advertised. Prices are hand-managed; the scheduled refresh must never rewrite this block."
@@ -46,16 +46,12 @@
   "events": {
     "capacity_builder": {
       "name": "Capacity Builder: Self-Regulation Practice",
-      "next_utc": "2026-10-22T16:00:00.000Z",
-      "next_display": "Thursday, October 22 at 9:00 AM PT",
+      "next_utc": "2026-10-29T22:00:00.000Z",
+      "next_display": "Thursday, October 29 at 3:00 PM PT",
       "upcoming": [
         {
-          "utc": "2026-10-22T16:00:00.000Z",
-          "display": "Thursday, October 22 at 9:00 AM PT"
-        },
-        {
-          "utc": "2026-10-23T22:00:00.000Z",
-          "display": "Friday, October 23 at 3:00 PM PT"
+          "utc": "2026-10-29T22:00:00.000Z",
+          "display": "Thursday, October 29 at 3:00 PM PT"
         },
         {
           "utc": "2026-10-30T22:00:00.000Z",
@@ -203,6 +199,10 @@
         {
           "utc": "2027-02-17T17:00:00.000Z",
           "display": "Wednesday, February 17 at 9:00 AM PT"
+        },
+        {
+          "utc": "2027-02-24T17:00:00.000Z",
+          "display": "Wednesday, February 24 at 9:00 AM PT"
         }
       ]
     },
@@ -230,26 +230,21 @@
       ]
     },
     "next_any": {
-      "label": "Capacity Builder",
-      "series": "capacity_builder",
-      "next_utc": "2026-10-22T16:00:00.000Z",
-      "next_display": "Thursday, October 22 at 9:00 AM PT",
-      "display_full": "Capacity Builder: Thursday, October 22 at 9:00 AM PT",
+      "label": "Mindful Moment",
+      "series": "mindful_moment",
+      "next_utc": "2026-10-28T16:00:00.000Z",
+      "next_display": "Wednesday, October 28 at 9:00 AM PT",
+      "display_full": "Mindful Moment: Wednesday, October 28 at 9:00 AM PT",
       "upcoming": [
-        {
-          "utc": "2026-10-22T16:00:00.000Z",
-          "display": "Thursday, October 22 at 9:00 AM PT",
-          "label": "Capacity Builder"
-        },
-        {
-          "utc": "2026-10-23T22:00:00.000Z",
-          "display": "Friday, October 23 at 3:00 PM PT",
-          "label": "Capacity Builder"
-        },
         {
           "utc": "2026-10-28T16:00:00.000Z",
           "display": "Wednesday, October 28 at 9:00 AM PT",
           "label": "Mindful Moment"
+        },
+        {
+          "utc": "2026-10-29T22:00:00.000Z",
+          "display": "Thursday, October 29 at 3:00 PM PT",
+          "label": "Capacity Builder"
         },
         {
           "utc": "2026-10-30T22:00:00.000Z",
@@ -440,6 +435,11 @@
           "utc": "2027-02-22T17:00:00.000Z",
           "display": "Monday, February 22 at 9:00 AM PT",
           "label": "Capacity Builder"
+        },
+        {
+          "utc": "2027-02-24T17:00:00.000Z",
+          "display": "Wednesday, February 24 at 9:00 AM PT",
+          "label": "Mindful Moment"
         }
       ]
     },
