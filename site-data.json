@@ -6,7 +6,7 @@
     "updated_by": "Scheduled task (Cowork), refreshed from Circle Events (space 2429616, filter_date 2026-10-26 to 2027-02-26). All three free series had future occurrences; cohort remains paused per Justin's 2026-10-22 note (no Self-Regulation Simplified events in range).",
     "cohort_rule": "Once a cohort has started it is locked: show_publicly=false and its dates are not surfaced on public pages until the next cohort opens.",
     "events_note": "utc = UTC ISO-8601 (source of truth); display = America/Los_Angeles. Sourced from Circle Events (community stucknotbroken, 'Calendar' space id 2429616). events.<series>.upcoming is a FORWARD-LOOKING LIST: the page picks the first entry still in the future AT PAGE LOAD, so the displayed date stays correct between refreshes and a late or failed refresh cannot strand a date that has already passed. next_utc/next_display are the head of that list, kept for older embeds that read them directly. Refresh before the list runs out (see prices_note for the cadence).",
-    "prices_note": "Academy moved to monthly billing 2026-08-27: Self-Regulator $24/mo, Co-Regulator $39/mo, cancel anytime. The old term keys (3mo/6mo/12mo) are gone - existing members keep legacy rates, but nothing new is sold on them. Lifetime is still sold but is deliberately NOT advertised. Prices are hand-managed; the scheduled refresh must never rewrite this block."
+    "prices_note": "2026-10-28 (Justin): Self-Regulator moved out of Circle into the SNB app at $12/mo ($108/yr offered at checkout). The $24 Circle Self-Regulator tier is retired and its Circle checkout is archived; prices.academy.self_reg is gone, see prices.app.self_reg. The Academy sells only Co-Regulator, $39/mo, capped at 100 members. Tier names members see: Free, Self-Regulator, Co-Regulator. Lifetime is still not advertised. Source: snb-business Projects/Get more sales/CIRCLE-TO-APP-PRICING.md. Prices are hand-managed; the scheduled refresh must never rewrite this block."
   },
   "prices": {
     "books": {
@@ -22,17 +22,12 @@
       }
     },
     "academy": {
-      "self_reg": {
-        "monthly": {
-          "mo": "$24/mo",
-          "amt": "$24"
-        }
-      },
       "co_reg": {
         "monthly": {
           "mo": "$39/mo",
           "amt": "$39"
-        }
+        },
+        "cap": 100
       },
       "lifetime": {
         "mo": "no renewals",
@@ -41,6 +36,22 @@
         "note": "Still sold, no longer advertised on the site (Justin, 2026-08-27). Do not surface."
       },
       "single_cohort_range": "$250-400"
+    },
+    "app": {
+      "self_reg": {
+        "name": "Self-Regulator",
+        "monthly": {
+          "amt": "$12",
+          "mo": "$12/mo",
+          "line": "Self-Regulator, $12 a month, cancel anytime."
+        },
+        "annual": {
+          "amt": "$108",
+          "yr": "$108/yr",
+          "note": "Offered at the app checkout only; monthly is the default. Do not show as a saving."
+        },
+        "url": "https://app.stucknotbroken.com/?start=signup&plan=monthly&src=site"
+      }
     }
   },
   "events": {
