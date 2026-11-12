@@ -1,9 +1,10 @@
+
 {
   "_meta": {
     "purpose": "Single source for repeated values (prices + next live-event dates) on Stuck Not Broken Circle pages. Pages keep the real value baked into the HTML as a static fallback and only overwrite it from this file if the live fetch succeeds, so nothing ever shows blank and SEO/body copy is unaffected.",
     "raw_url": "https://raw.githubusercontent.com/justinlmft/stucknotbroken/main/site-data.json",
-    "updated": "2026-11-09",
-    "updated_by": "Scheduled task (Cowork), refreshed from Circle Events (space 2429616, filter_date 2026-11-09 to 2027-03-09). Free series future occurrences found: capacity_builder 18, mindful_moment 16, qa 5. Checked the same window for a new Self-Regulation Simplified cohort: none found, so the cohort block is left unchanged (paused, per Justin's 2026-10-22 note).",
+    "updated": "2026-11-12",
+    "updated_by": "Scheduled task (Cowork), refreshed from Circle Events (space 2429616, filter_date 2026-11-12 to 2027-03-12). Free series future occurrences found: capacity_builder 18, mindful_moment 10, qa 4. mindful_moment now runs mostly Thursdays with occasional Saturday sessions (per Circle's current schedule, event titles vary by topic e.g. \"Mindful Reflection: ...\") rather than every Wednesday - reflects Circle's live calendar, not a data error. Checked the same window for a new Self-Regulation Simplified cohort: none found, so the cohort block is left unchanged (paused, per Justin's 2026-10-22 note).",
     "cohort_rule": "Once a cohort has started it is locked: show_publicly=false and its dates are not surfaced on public pages until the next cohort opens.",
     "events_note": "utc = UTC ISO-8601 (source of truth); display = America/Los_Angeles. Sourced from Circle Events (community stucknotbroken, 'Calendar' space id 2429616). events.<series>.upcoming is a FORWARD-LOOKING LIST: the page picks the first entry still in the future AT PAGE LOAD, so the displayed date stays correct between refreshes and a late or failed refresh cannot strand a date that has already passed. next_utc/next_display are the head of that list, kept for older embeds that read them directly. Refresh before the list runs out (see prices_note for the cadence).",
     "prices_note": "2026-10-28 (Justin): Self-Regulator moved out of Circle into the SNB app at $12/mo ($108/yr offered at checkout). The $24 Circle Self-Regulator tier is retired and its Circle checkout is archived; prices.academy.self_reg is gone, see prices.app.self_reg. The Academy sells only Co-Regulator, $39/mo, capped at 100 members. Tier names members see: Free, Self-Regulator, Co-Regulator. Lifetime is still not advertised. Source: snb-business Projects/Get more sales/CIRCLE-TO-APP-PRICING.md. Prices are hand-managed; the scheduled refresh must never rewrite this block."
@@ -136,84 +137,56 @@
     },
     "mindful_moment": {
       "name": "Mindful Moment",
-      "next_utc": "2026-11-11T17:00:00Z",
-      "next_display": "Wednesday, November 11 at 9:00 AM PT",
+      "next_utc": "2026-11-19T17:00:00Z",
+      "next_display": "Thursday, November 19 at 9:00 AM PT",
       "upcoming": [
         {
-          "utc": "2026-11-11T17:00:00Z",
-          "display": "Wednesday, November 11 at 9:00 AM PT"
+          "utc": "2026-11-19T17:00:00Z",
+          "display": "Thursday, November 19 at 9:00 AM PT"
         },
         {
-          "utc": "2026-11-18T17:00:00Z",
-          "display": "Wednesday, November 18 at 9:00 AM PT"
+          "utc": "2026-12-03T17:00:00Z",
+          "display": "Thursday, December 3 at 9:00 AM PT"
         },
         {
-          "utc": "2026-11-25T17:00:00Z",
-          "display": "Wednesday, November 25 at 9:00 AM PT"
+          "utc": "2026-12-05T17:00:00Z",
+          "display": "Saturday, December 5 at 9:00 AM PT"
         },
         {
-          "utc": "2026-12-02T17:00:00Z",
-          "display": "Wednesday, December 2 at 9:00 AM PT"
+          "utc": "2026-12-17T17:00:00Z",
+          "display": "Thursday, December 17 at 9:00 AM PT"
         },
         {
-          "utc": "2026-12-09T17:00:00Z",
-          "display": "Wednesday, December 9 at 9:00 AM PT"
+          "utc": "2027-01-02T17:00:00Z",
+          "display": "Saturday, January 2 at 9:00 AM PT"
         },
         {
-          "utc": "2026-12-16T17:00:00Z",
-          "display": "Wednesday, December 16 at 9:00 AM PT"
+          "utc": "2027-01-14T17:00:00Z",
+          "display": "Thursday, January 14 at 9:00 AM PT"
         },
         {
-          "utc": "2026-12-23T17:00:00Z",
-          "display": "Wednesday, December 23 at 9:00 AM PT"
+          "utc": "2027-01-28T17:00:00Z",
+          "display": "Thursday, January 28 at 9:00 AM PT"
         },
         {
-          "utc": "2026-12-30T17:00:00Z",
-          "display": "Wednesday, December 30 at 9:00 AM PT"
+          "utc": "2027-02-06T17:00:00Z",
+          "display": "Saturday, February 6 at 9:00 AM PT"
         },
         {
-          "utc": "2027-01-06T17:00:00Z",
-          "display": "Wednesday, January 6 at 9:00 AM PT"
+          "utc": "2027-02-11T17:00:00Z",
+          "display": "Thursday, February 11 at 9:00 AM PT"
         },
         {
-          "utc": "2027-01-13T17:00:00Z",
-          "display": "Wednesday, January 13 at 9:00 AM PT"
-        },
-        {
-          "utc": "2027-01-20T17:00:00Z",
-          "display": "Wednesday, January 20 at 9:00 AM PT"
-        },
-        {
-          "utc": "2027-01-27T17:00:00Z",
-          "display": "Wednesday, January 27 at 9:00 AM PT"
-        },
-        {
-          "utc": "2027-02-03T17:00:00Z",
-          "display": "Wednesday, February 3 at 9:00 AM PT"
-        },
-        {
-          "utc": "2027-02-10T17:00:00Z",
-          "display": "Wednesday, February 10 at 9:00 AM PT"
-        },
-        {
-          "utc": "2027-02-17T17:00:00Z",
-          "display": "Wednesday, February 17 at 9:00 AM PT"
-        },
-        {
-          "utc": "2027-02-24T17:00:00Z",
-          "display": "Wednesday, February 24 at 9:00 AM PT"
+          "utc": "2027-02-25T17:00:00Z",
+          "display": "Thursday, February 25 at 9:00 AM PT"
         }
       ]
     },
     "qa": {
       "name": "Q&A",
-      "next_utc": "2026-11-09T18:30:00Z",
-      "next_display": "Monday, November 9 at 10:30 AM PT",
+      "next_utc": "2026-12-14T18:30:00Z",
+      "next_display": "Monday, December 14 at 10:30 AM PT",
       "upcoming": [
-        {
-          "utc": "2026-11-09T18:30:00Z",
-          "display": "Monday, November 9 at 10:30 AM PT"
-        },
         {
           "utc": "2026-12-14T18:30:00Z",
           "display": "Monday, December 14 at 10:30 AM PT"
@@ -233,22 +206,12 @@
       ]
     },
     "next_any": {
-      "label": "Q&A",
-      "series": "qa",
-      "next_utc": "2026-11-09T18:30:00Z",
-      "next_display": "Monday, November 9 at 10:30 AM PT",
-      "display_full": "Q&A: Monday, November 9 at 10:30 AM PT",
+      "label": "Capacity Builder",
+      "series": "capacity_builder",
+      "next_utc": "2026-11-13T23:00:00Z",
+      "next_display": "Friday, November 13 at 3:00 PM PT",
+      "display_full": "Capacity Builder: Friday, November 13 at 3:00 PM PT",
       "upcoming": [
-        {
-          "utc": "2026-11-09T18:30:00Z",
-          "display": "Monday, November 9 at 10:30 AM PT",
-          "label": "Q&A"
-        },
-        {
-          "utc": "2026-11-11T17:00:00Z",
-          "display": "Wednesday, November 11 at 9:00 AM PT",
-          "label": "Mindful Moment"
-        },
         {
           "utc": "2026-11-13T23:00:00Z",
           "display": "Friday, November 13 at 3:00 PM PT",
@@ -260,13 +223,8 @@
           "label": "Capacity Builder"
         },
         {
-          "utc": "2026-11-18T17:00:00Z",
-          "display": "Wednesday, November 18 at 9:00 AM PT",
-          "label": "Mindful Moment"
-        },
-        {
-          "utc": "2026-11-25T17:00:00Z",
-          "display": "Wednesday, November 25 at 9:00 AM PT",
+          "utc": "2026-11-19T17:00:00Z",
+          "display": "Thursday, November 19 at 9:00 AM PT",
           "label": "Mindful Moment"
         },
         {
@@ -280,13 +238,13 @@
           "label": "Capacity Builder"
         },
         {
-          "utc": "2026-12-02T17:00:00Z",
-          "display": "Wednesday, December 2 at 9:00 AM PT",
+          "utc": "2026-12-03T17:00:00Z",
+          "display": "Thursday, December 3 at 9:00 AM PT",
           "label": "Mindful Moment"
         },
         {
-          "utc": "2026-12-09T17:00:00Z",
-          "display": "Wednesday, December 9 at 9:00 AM PT",
+          "utc": "2026-12-05T17:00:00Z",
+          "display": "Saturday, December 5 at 9:00 AM PT",
           "label": "Mindful Moment"
         },
         {
@@ -305,13 +263,8 @@
           "label": "Q&A"
         },
         {
-          "utc": "2026-12-16T17:00:00Z",
-          "display": "Wednesday, December 16 at 9:00 AM PT",
-          "label": "Mindful Moment"
-        },
-        {
-          "utc": "2026-12-23T17:00:00Z",
-          "display": "Wednesday, December 23 at 9:00 AM PT",
+          "utc": "2026-12-17T17:00:00Z",
+          "display": "Thursday, December 17 at 9:00 AM PT",
           "label": "Mindful Moment"
         },
         {
@@ -325,13 +278,8 @@
           "label": "Capacity Builder"
         },
         {
-          "utc": "2026-12-30T17:00:00Z",
-          "display": "Wednesday, December 30 at 9:00 AM PT",
-          "label": "Mindful Moment"
-        },
-        {
-          "utc": "2027-01-06T17:00:00Z",
-          "display": "Wednesday, January 6 at 9:00 AM PT",
+          "utc": "2027-01-02T17:00:00Z",
+          "display": "Saturday, January 2 at 9:00 AM PT",
           "label": "Mindful Moment"
         },
         {
@@ -350,13 +298,8 @@
           "label": "Q&A"
         },
         {
-          "utc": "2027-01-13T17:00:00Z",
-          "display": "Wednesday, January 13 at 9:00 AM PT",
-          "label": "Mindful Moment"
-        },
-        {
-          "utc": "2027-01-20T17:00:00Z",
-          "display": "Wednesday, January 20 at 9:00 AM PT",
+          "utc": "2027-01-14T17:00:00Z",
+          "display": "Thursday, January 14 at 9:00 AM PT",
           "label": "Mindful Moment"
         },
         {
@@ -370,19 +313,19 @@
           "label": "Capacity Builder"
         },
         {
-          "utc": "2027-01-27T17:00:00Z",
-          "display": "Wednesday, January 27 at 9:00 AM PT",
-          "label": "Mindful Moment"
-        },
-        {
-          "utc": "2027-02-03T17:00:00Z",
-          "display": "Wednesday, February 3 at 9:00 AM PT",
+          "utc": "2027-01-28T17:00:00Z",
+          "display": "Thursday, January 28 at 9:00 AM PT",
           "label": "Mindful Moment"
         },
         {
           "utc": "2027-02-05T23:00:00Z",
           "display": "Friday, February 5 at 3:00 PM PT",
           "label": "Capacity Builder"
+        },
+        {
+          "utc": "2027-02-06T17:00:00Z",
+          "display": "Saturday, February 6 at 9:00 AM PT",
+          "label": "Mindful Moment"
         },
         {
           "utc": "2027-02-08T17:00:00Z",
@@ -395,13 +338,8 @@
           "label": "Q&A"
         },
         {
-          "utc": "2027-02-10T17:00:00Z",
-          "display": "Wednesday, February 10 at 9:00 AM PT",
-          "label": "Mindful Moment"
-        },
-        {
-          "utc": "2027-02-17T17:00:00Z",
-          "display": "Wednesday, February 17 at 9:00 AM PT",
+          "utc": "2027-02-11T17:00:00Z",
+          "display": "Thursday, February 11 at 9:00 AM PT",
           "label": "Mindful Moment"
         },
         {
@@ -415,8 +353,8 @@
           "label": "Capacity Builder"
         },
         {
-          "utc": "2027-02-24T17:00:00Z",
-          "display": "Wednesday, February 24 at 9:00 AM PT",
+          "utc": "2027-02-25T17:00:00Z",
+          "display": "Thursday, February 25 at 9:00 AM PT",
           "label": "Mindful Moment"
         },
         {
