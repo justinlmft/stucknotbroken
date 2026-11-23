@@ -2,8 +2,8 @@
   "_meta": {
     "purpose": "Single source for repeated values (prices + next live-event dates) on Stuck Not Broken Circle pages. Pages keep the real value baked into the HTML as a static fallback and only overwrite it from this file if the live fetch succeeds, so nothing ever shows blank and SEO/body copy is unaffected.",
     "raw_url": "https://raw.githubusercontent.com/justinlmft/stucknotbroken/main/site-data.json",
-    "updated": "2026-11-19",
-    "updated_by": "Scheduled refresh (2026-11-19). Pulled Circle Events (space_id 2429616) for the next ~4 months: capacity_builder (16 upcoming, matched \"Capacity Builder\" prefix), qa (4 upcoming, \"Q&A\" prefix), and mindful_reflection (10 upcoming, \"Mindful Reflection\" prefix, gated Co-Regulator/Lifetime series, kept in sync per 2026-11-16 note but still excluded from next_any and public display). events.mindful_moment has no events in Circle anymore (per the 2026-11-16 correction: it moved to the app) so it stays a generated weekly-Wednesday, 9:00 AM PT schedule, not sourced from Circle; its window was rolled forward to start at the next upcoming Wednesday (2026-11-25) and extended to 2027-03-17 (17 entries) since the old head (2026-11-16) had already passed. cohort (Self-Regulation Simplified) unchanged - no sessions found in Circle in this window, consistent with Justin's 2026-10-22 pause; still flagged paused, not surfaced. Prices untouched.",
+    "updated": "2026-11-23",
+    "updated_by": "Scheduled refresh (2026-11-23). Pulled Circle Events (space_id 2429616) for the next ~4 months: capacity_builder (17 upcoming), qa (4 upcoming), mindful_reflection (9 upcoming, gated Co-Regulator/Lifetime series, excluded from next_any and public display). mindful_moment is not sourced from Circle; generated weekly-Wednesday 9:00 AM PT schedule rolled forward 2026-11-25 to 2027-03-24 (18 entries). No Mindful Moment events seen in Circle. cohort (Self-Regulation Simplified) unchanged: no sessions in Circle, consistent with Justin's 2026-10-22 pause; not surfaced. Prices untouched.",
     "cohort_rule": "Once a cohort has started it is locked: show_publicly=false and its dates are not surfaced on public pages until the next cohort opens.",
     "events_note": "utc = UTC ISO-8601 (source of truth); display = America/Los_Angeles. Sourced from Circle Events (community stucknotbroken, 'Calendar' space id 2429616) for capacity_builder, qa and mindful_reflection. mindful_moment is NOT sourced from Circle — it is a generated weekly-Wednesday schedule since that practice moved to the app. events.<series>.upcoming is a FORWARD-LOOKING LIST: the page picks the first entry still in the future AT PAGE LOAD, so the displayed date stays correct between refreshes and a late or failed refresh cannot strand a date that has already passed. next_utc/next_display are the head of that list, kept for older embeds that read them directly.",
     "prices_note": "2026-10-28 (Justin): Self-Regulator moved out of Circle into the SNB app at $12/mo ($108/yr offered at checkout). The $24 Circle Self-Regulator tier is retired and its Circle checkout is archived; prices.academy.self_reg is gone, see prices.app.self_reg. The Academy sells only Co-Regulator, $39/mo, capped at 100 members. Tier names members see: Free, Self-Regulator, Co-Regulator. Lifetime is still not advertised. Source: snb-business Projects/Get more sales/CIRCLE-TO-APP-PRICING.md. Prices are hand-managed; the scheduled refresh must never rewrite this block."
@@ -123,6 +123,10 @@
         {
           "utc": "2027-03-08T17:00:00Z",
           "display": "Monday, March 8 at 9:00 AM PT"
+        },
+        {
+          "utc": "2027-03-22T16:00:00Z",
+          "display": "Monday, March 22 at 9:00 AM PT"
         }
       ]
     },
@@ -198,6 +202,10 @@
         {
           "utc": "2027-03-17T16:00:00Z",
           "display": "Wednesday, March 17 at 9:00 AM PT"
+        },
+        {
+          "utc": "2027-03-24T16:00:00Z",
+          "display": "Wednesday, March 24 at 9:00 AM PT"
         }
       ]
     },
@@ -415,6 +423,16 @@
           "utc": "2027-03-17T16:00:00Z",
           "display": "Wednesday, March 17 at 9:00 AM PT",
           "label": "Mindful Moment"
+        },
+        {
+          "utc": "2027-03-22T16:00:00Z",
+          "display": "Monday, March 22 at 9:00 AM PT",
+          "label": "Capacity Builder"
+        },
+        {
+          "utc": "2027-03-24T16:00:00Z",
+          "display": "Wednesday, March 24 at 9:00 AM PT",
+          "label": "Mindful Moment"
         }
       ]
     },
@@ -430,13 +448,9 @@
       "show_publicly": false,
       "eligibility": "Co-Regulator and Lifetime members only",
       "note": "New 10-session series (launched 2026-11-10, first session 2026-11-19), 30 min each, running alongside Capacity Builder. Gated to Co-Regulator/Lifetime members — do not surface on public free-event pages or in next_any.",
-      "next_utc": "2026-11-19T17:00:00Z",
-      "next_display": "Thursday, November 19 at 9:00 AM PT",
+      "next_utc": "2026-12-03T17:00:00Z",
+      "next_display": "Thursday, December 3 at 9:00 AM PT",
       "upcoming": [
-        {
-          "utc": "2026-11-19T17:00:00Z",
-          "display": "Thursday, November 19 at 9:00 AM PT"
-        },
         {
           "utc": "2026-12-03T17:00:00Z",
           "display": "Thursday, December 3 at 9:00 AM PT"
