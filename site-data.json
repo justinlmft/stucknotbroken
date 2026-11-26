@@ -2,8 +2,8 @@
   "_meta": {
     "purpose": "Single source for repeated values (prices + next live-event dates) on Stuck Not Broken Circle pages. Pages keep the real value baked into the HTML as a static fallback and only overwrite it from this file if the live fetch succeeds, so nothing ever shows blank and SEO/body copy is unaffected.",
     "raw_url": "https://raw.githubusercontent.com/justinlmft/stucknotbroken/main/site-data.json",
-    "updated": "2026-11-23",
-    "updated_by": "Scheduled refresh (2026-11-23). Pulled Circle Events (space_id 2429616) for the next ~4 months: capacity_builder (17 upcoming), qa (4 upcoming), mindful_reflection (9 upcoming, gated Co-Regulator/Lifetime series, excluded from next_any and public display). mindful_moment is not sourced from Circle; generated weekly-Wednesday 9:00 AM PT schedule rolled forward 2026-11-25 to 2027-03-24 (18 entries). No Mindful Moment events seen in Circle. cohort (Self-Regulation Simplified) unchanged: no sessions in Circle, consistent with Justin's 2026-10-22 pause; not surfaced. Prices untouched.",
+    "updated": "2026-11-26",
+    "updated_by": "Scheduled refresh (2026-11-26). Pulled Circle Events (space_id 2429616) for the next ~4 months: capacity_builder (15 upcoming; the Friday Nov 27 and Friday Dec 25 sessions are no longer in Circle), qa (4 upcoming), mindful_reflection (9 upcoming, gated Co-Regulator/Lifetime series, excluded from next_any and public display). mindful_moment is not sourced from Circle; generated weekly-Wednesday 9:00 AM PT schedule rolled forward 2026-12-02 to 2027-03-24 (17 entries). No Mindful Moment events seen in Circle. cohort (Self-Regulation Simplified) unchanged: no sessions in Circle, consistent with Justin's 2026-10-22 pause; not surfaced. Prices untouched.",
     "cohort_rule": "Once a cohort has started it is locked: show_publicly=false and its dates are not surfaced on public pages until the next cohort opens.",
     "events_note": "utc = UTC ISO-8601 (source of truth); display = America/Los_Angeles. Sourced from Circle Events (community stucknotbroken, 'Calendar' space id 2429616) for capacity_builder, qa and mindful_reflection. mindful_moment is NOT sourced from Circle — it is a generated weekly-Wednesday schedule since that practice moved to the app. events.<series>.upcoming is a FORWARD-LOOKING LIST: the page picks the first entry still in the future AT PAGE LOAD, so the displayed date stays correct between refreshes and a late or failed refresh cannot strand a date that has already passed. next_utc/next_display are the head of that list, kept for older embeds that read them directly.",
     "prices_note": "2026-10-28 (Justin): Self-Regulator moved out of Circle into the SNB app at $12/mo ($108/yr offered at checkout). The $24 Circle Self-Regulator tier is retired and its Circle checkout is archived; prices.academy.self_reg is gone, see prices.app.self_reg. The Academy sells only Co-Regulator, $39/mo, capped at 100 members. Tier names members see: Free, Self-Regulator, Co-Regulator. Lifetime is still not advertised. Source: snb-business Projects/Get more sales/CIRCLE-TO-APP-PRICING.md. Prices are hand-managed; the scheduled refresh must never rewrite this block."
@@ -57,13 +57,9 @@
   "events": {
     "capacity_builder": {
       "name": "Capacity Builder: Self-Regulation Practice",
-      "next_utc": "2026-11-27T23:00:00Z",
-      "next_display": "Friday, November 27 at 3:00 PM PT",
+      "next_utc": "2026-11-30T17:00:00Z",
+      "next_display": "Monday, November 30 at 9:00 AM PT",
       "upcoming": [
-        {
-          "utc": "2026-11-27T23:00:00Z",
-          "display": "Friday, November 27 at 3:00 PM PT"
-        },
         {
           "utc": "2026-11-30T17:00:00Z",
           "display": "Monday, November 30 at 9:00 AM PT"
@@ -75,10 +71,6 @@
         {
           "utc": "2026-12-14T17:00:00Z",
           "display": "Monday, December 14 at 9:00 AM PT"
-        },
-        {
-          "utc": "2026-12-25T23:00:00Z",
-          "display": "Friday, December 25 at 3:00 PM PT"
         },
         {
           "utc": "2026-12-28T17:00:00Z",
@@ -132,13 +124,9 @@
     },
     "mindful_moment": {
       "name": "Mindful Moment",
-      "next_utc": "2026-11-25T17:00:00Z",
-      "next_display": "Wednesday, November 25 at 9:00 AM PT",
+      "next_utc": "2026-12-02T17:00:00Z",
+      "next_display": "Wednesday, December 2 at 9:00 AM PT",
       "upcoming": [
-        {
-          "utc": "2026-11-25T17:00:00Z",
-          "display": "Wednesday, November 25 at 9:00 AM PT"
-        },
         {
           "utc": "2026-12-02T17:00:00Z",
           "display": "Wednesday, December 2 at 9:00 AM PT"
@@ -233,22 +221,12 @@
       ]
     },
     "next_any": {
-      "label": "Mindful Moment",
-      "series": "mindful_moment",
-      "next_utc": "2026-11-25T17:00:00Z",
-      "next_display": "Wednesday, November 25 at 9:00 AM PT",
-      "display_full": "Mindful Moment: Wednesday, November 25 at 9:00 AM PT",
+      "label": "Capacity Builder",
+      "series": "capacity_builder",
+      "next_utc": "2026-11-30T17:00:00Z",
+      "next_display": "Monday, November 30 at 9:00 AM PT",
+      "display_full": "Capacity Builder: Monday, November 30 at 9:00 AM PT",
       "upcoming": [
-        {
-          "utc": "2026-11-25T17:00:00Z",
-          "display": "Wednesday, November 25 at 9:00 AM PT",
-          "label": "Mindful Moment"
-        },
-        {
-          "utc": "2026-11-27T23:00:00Z",
-          "display": "Friday, November 27 at 3:00 PM PT",
-          "label": "Capacity Builder"
-        },
         {
           "utc": "2026-11-30T17:00:00Z",
           "display": "Monday, November 30 at 9:00 AM PT",
@@ -288,11 +266,6 @@
           "utc": "2026-12-23T17:00:00Z",
           "display": "Wednesday, December 23 at 9:00 AM PT",
           "label": "Mindful Moment"
-        },
-        {
-          "utc": "2026-12-25T23:00:00Z",
-          "display": "Friday, December 25 at 3:00 PM PT",
-          "label": "Capacity Builder"
         },
         {
           "utc": "2026-12-28T17:00:00Z",
